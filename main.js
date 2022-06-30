@@ -5,10 +5,18 @@ const ulEl = document.getElementById("ul-el")
 
 inputBtn.addEventListener("click",function(){
  myleads.push(inputEl.value)
- 
+ inputEl.value = ""
+ renderLeads()
 })
 
+
+function renderLeads()
+{
+ let saveLeads = ""
 for(let i =0;i<myleads.length;i++)
 {
- ulEl.innerHTML += "<li>"+myleads[i]+"</li>"
+  saveLeads += "<li>"+myleads[i]+"</li>"
+}
+
+ulEl.innerHTML = saveLeads;
 }
