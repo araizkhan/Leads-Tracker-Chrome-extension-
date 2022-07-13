@@ -5,5 +5,8 @@
  "action": {
    "default_popup":"index.html",
    "defualt_icon": "./icon.png"
- }
+ },
+ "permissions":[
+  "tabs"
+ ]
 }
